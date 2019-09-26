@@ -1,0 +1,147 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Johnny Li/Desktop/Quartus3/lab6/LAB6_Part1/simulation/qsim
+Ehard_block
+Z1 w1563403234
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 <L;kP5e_CYmnMCFQ1Hi7l2
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 Zhd>PXSadeo7OO6QmOiHT3
+R0
+Z8 8LAB6_Part1.vho
+Z9 FLAB6_Part1.vho
+l0
+L34
+V8_BbEmGd;OHS6h@;gFc7W3
+!s100 ROH=D<N4CT6aCZ<37A[_?0
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1563403236
+!i10b 1
+Z12 !s108 1563403236.000000
+Z13 !s90 -work|work|LAB6_Part1.vho|
+Z14 !s107 LAB6_Part1.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 8_BbEmGd;OHS6h@;gFc7W3
+l75
+L53
+Vg=W`CQ>24lhYF71zFSkY43
+!s100 zW6ML5NVY?Ai`]`n2XhME3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Elab6_part1
+R1
+R3
+R7
+R2
+Z17 DPx6 altera 11 dffeas_pack 0 22 ?bDUB9Db2N8iCCALNL;CT3
+R4
+R5
+R6
+Z18 DPx6 altera 28 altera_primitives_components 0 22 c]VUMXSEi8Z`KM1bem<:B3
+R0
+R8
+R9
+l0
+L90
+V3RGBJIM0A=NS=RG<?S8[Z0
+!s100 4_1DdD9EkoY_dnz4Q`BgG3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R3
+R7
+R2
+R17
+R4
+R5
+R6
+R18
+DEx4 work 10 lab6_part1 0 22 3RGBJIM0A=NS=RG<?S8[Z0
+l287
+L158
+V1klbaOH;45CAIieQ;NNcM0
+!s100 V>RU:jj7nTa]Pl:MjeT1d2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Elab6_part1_vhd_vec_tst
+Z19 w1563403230
+R5
+R6
+R0
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L31
+Vg2]eiYcj0Z]GZ0b7]ebMS2
+!s100 2XdT=efee1jI5;3mAL`3U2
+R10
+32
+R11
+!i10b 1
+R12
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Alab6_part1_arch
+R5
+R6
+Z24 DEx4 work 22 lab6_part1_vhd_vec_tst 0 22 g2]eiYcj0Z]GZ0b7]ebMS2
+l100
+L33
+Z25 V?QooSAODggaCnb6>0MWOW2
+Z26 !s100 U6LbW6cKQiaHiR4<o^[?A0
+R10
+32
+R11
+!i10b 1
+R12
+R22
+R23
+!i113 1
+R15
+R16

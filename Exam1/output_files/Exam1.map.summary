@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Thu Jun 20 14:47:44 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : Exam1
+Top-level Entity Name : Exam1
+Family : MAX 10
+Total logic elements : 4
+    Total combinational functions : 4
+    Dedicated logic registers : 2
+Total registers : 2
+Total pins : 8
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

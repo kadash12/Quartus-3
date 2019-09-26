@@ -1,0 +1,30 @@
+# do lab2_decoder.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:29:40 on Jun 03,2019
+# vlog -work work lab2_decoder.vo 
+# -- Compiling module lab2_decoder
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	lab2_decoder
+# End time: 02:29:40 on Jun 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:29:40 on Jun 03,2019
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module lab2_decoder_vlg_vec_tst
+# 
+# Top level modules:
+# 	lab2_decoder_vlg_vec_tst
+# End time: 02:29:40 on Jun 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.lab2_decoder_vlg_vec_tst 
+# Start time: 02:29:41 on Jun 03,2019
+# Loading work.lab2_decoder_vlg_vec_tst
+# Loading work.lab2_decoder
+# Loading work.hard_block
+# after#24
+# ** Note: $finish    : Waveform.vwf.vt(58)
+#    Time: 1200 ns  Iteration: 0  Instance: /lab2_decoder_vlg_vec_tst
+# End time: 02:29:43 on Jun 03,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

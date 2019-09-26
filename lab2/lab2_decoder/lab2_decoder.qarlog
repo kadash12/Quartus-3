@@ -1,0 +1,17 @@
+Quartus Prime Archive log --	C:/Users/Johnny Li/Desktop/Quartus3/lab2/lab2_decoder/lab2_decoder.qarlog
+
+Archive:	C:/Users/Johnny Li/Desktop/Quartus3/lab2/lab2_decoder/lab2_decoder.qar
+Date:		Mon Jun 03 02:56:54 2019
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Johnny Li/Desktop/Quartus3/lab2/lab2_decoder/Waveform.vwf
+C:/Users/Johnny Li/Desktop/Quartus3/lab2/lab2_decoder/lab2_decoder.bdf
+C:/Users/Johnny Li/Desktop/Quartus3/lab2/lab2_decoder/lab2_decoder.qpf
+C:/Users/Johnny Li/Desktop/Quartus3/lab2/lab2_decoder/lab2_decoder.qsf
+C:/Users/Johnny Li/Desktop/Quartus3/lab2/lab2_decoder/output_files/lab2_decoder.cdf
+c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 6 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

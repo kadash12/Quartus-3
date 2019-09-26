@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Johnny Li/Desktop/Quartus3/lab3/Lab3_2bit_Cnt/Lab3_2bit_Cnt.bdf
+source_file = 1, C:/Users/Johnny Li/Desktop/Quartus3/lab3/Lab3_2bit_Cnt/Waveform.vwf
+source_file = 1, c:/intelfpga_lite/17.1/quartus/libraries/others/maxplus2/7474.bdf
+design_name = hard_block
+design_name = Lab3_2bit_Cnt
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, Lab3_2bit_Cnt, 1
+instance = comp, \Q1~output\, Q1~output, Lab3_2bit_Cnt, 1
+instance = comp, \Q0~output\, Q0~output, Lab3_2bit_Cnt, 1
+instance = comp, \CLK~input\, CLK~input, Lab3_2bit_Cnt, 1
+instance = comp, \CLK~inputclkctrl\, CLK~inputclkctrl, Lab3_2bit_Cnt, 1
+instance = comp, \inst|10~0\, inst|10~0, Lab3_2bit_Cnt, 1
+instance = comp, \inst|10\, inst|10, Lab3_2bit_Cnt, 1
+instance = comp, \inst|9~feeder\, inst|9~feeder, Lab3_2bit_Cnt, 1
+instance = comp, \inst|9\, inst|9, Lab3_2bit_Cnt, 1
+instance = comp, \~QUARTUS_CREATED_UNVM~\, ~QUARTUS_CREATED_UNVM~, Lab3_2bit_Cnt, 1

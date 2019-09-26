@@ -1,0 +1,18 @@
+Fitter Status : Successful - Thu Jun 13 03:07:32 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : Lab3_3bit_Cnt
+Top-level Entity Name : Lab3_3bit_Cnt
+Family : MAX 10
+Device : 10M02SCU169C8G
+Timing Models : Final
+Total logic elements : 30 / 2,304 ( 1 % )
+    Total combinational functions : 30 / 2,304 ( 1 % )
+    Dedicated logic registers : 3 / 2,304 ( < 1 % )
+Total registers : 3
+Total pins : 20 / 130 ( 15 % )
+Total virtual pins : 0
+Total memory bits : 0 / 110,592 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 32 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0

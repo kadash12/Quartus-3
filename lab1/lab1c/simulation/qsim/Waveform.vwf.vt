@@ -1,0 +1,145 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "05/27/2019 21:21:17"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          lab1c
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module lab1c_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg A;
+reg A_L;
+reg B;
+reg B2;
+reg C;
+reg C2;
+reg D;
+reg D_L;
+// wires                                               
+wire W;
+wire X;
+
+// assign statements (if any)                          
+lab1c i1 (
+// port map - connection between master ports and signals/registers   
+	.A(A),
+	.A_L(A_L),
+	.B(B),
+	.B2(B2),
+	.C(C),
+	.C2(C2),
+	.D(D),
+	.D_L(D_L),
+	.W(W),
+	.X(X)
+);
+initial 
+begin 
+#1200000 $finish;
+end 
+
+// A
+initial
+begin
+	repeat(3)
+	begin
+		A = 1'b0;
+		A = #160000 1'b1;
+		# 160000;
+	end
+	A = 1'b0;
+	A = #160000 1'b1;
+end 
+
+// B
+initial
+begin
+	repeat(7)
+	begin
+		B = 1'b0;
+		B = #80000 1'b1;
+		# 80000;
+	end
+	B = 1'b0;
+end 
+
+// C
+always
+begin
+	C = 1'b0;
+	C = #40000 1'b1;
+	#40000;
+end 
+
+// D
+always
+begin
+	D = 1'b0;
+	D = #20000 1'b1;
+	#20000;
+end 
+
+// A_L
+initial
+begin
+	repeat(3)
+	begin
+		A_L = 1'b0;
+		A_L = #160000 1'b1;
+		# 160000;
+	end
+	A_L = 1'b0;
+	A_L = #160000 1'b1;
+end 
+
+// B2
+initial
+begin
+	repeat(7)
+	begin
+		B2 = 1'b0;
+		B2 = #80000 1'b1;
+		# 80000;
+	end
+	B2 = 1'b0;
+end 
+
+// C2
+always
+begin
+	C2 = 1'b0;
+	C2 = #40000 1'b1;
+	#40000;
+end 
+
+// D_L
+always
+begin
+	D_L = 1'b0;
+	D_L = #20000 1'b1;
+	#20000;
+end 
+endmodule
+

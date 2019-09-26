@@ -1,0 +1,33 @@
+# do Lab4_CPU.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:52:34 on Jul 06,2019
+# vlog -work work Lab4_CPU.vo 
+# -- Compiling module Lab4_CPU
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	Lab4_CPU
+# End time: 14:52:34 on Jul 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:52:34 on Jul 06,2019
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module Lab4_CPU_vlg_vec_tst
+# 
+# Top level modules:
+# 	Lab4_CPU_vlg_vec_tst
+# End time: 14:52:34 on Jul 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Lab4_CPU_vlg_vec_tst 
+# Start time: 14:52:34 on Jul 06,2019
+# Loading work.Lab4_CPU_vlg_vec_tst
+# Loading work.Lab4_CPU
+# Loading work.hard_block
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+# after#26
+# ** Note: $finish    : Waveform.vwf.vt(94)
+#    Time: 1200 ns  Iteration: 0  Instance: /Lab4_CPU_vlg_vec_tst
+# End time: 14:52:35 on Jul 06,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

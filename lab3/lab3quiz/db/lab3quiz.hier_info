@@ -1,0 +1,11 @@
+|lab3quiz
+Y1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+R1 => inst.ACLR
+R1 => inst16.IN0
+CLK => inst.CLK
+CLK => inst3.CLK
+Y0 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q1 => ~NO_FANOUT~
+Q0 => ~NO_FANOUT~
+
+

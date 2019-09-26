@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Mon Jun 10 03:24:48 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : Lab3_2bit_Cnt
+Top-level Entity Name : Lab3_2bit_Cnt
+Family : MAX 10
+Device : 10M02SCU169C8G
+Power Models : Final
+Total Thermal Power Dissipation : 72.23 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 66.77 mW
+I/O Thermal Power Dissipation : 5.46 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

@@ -1,0 +1,768 @@
+|Lab6_Part2_ext_ROM
+IRLD <= CONTROLLER2:inst31.IRLD
+IR2 <= InstructionRegister:inst2.IR
+CLK <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst7.ACLR
+RESET => 74161:inst11.CLRN
+RESET => InstructionRegister:inst2.Reset
+RESET => InstructionRegister:inst3.Reset
+RESET => InstructionRegister:inst14.Reset
+RESET => inst8.ACLR
+RESET => inst5.ACLR
+RESET => Lab4_CPU:inst.RESET
+MemCLK => inst7.CLK
+MemCLK => BOARD_VHDL_ROM:inst16.CLK
+IN[0] <= BOARD_VHDL_ROM:inst16.D[0]
+IN[1] <= BOARD_VHDL_ROM:inst16.D[1]
+IN[2] <= BOARD_VHDL_ROM:inst16.D[2]
+IN[3] <= BOARD_VHDL_ROM:inst16.D[3]
+Addr[0] <= 74161:inst11.QA
+Addr[1] <= 74161:inst11.QB
+Addr[2] <= 74161:inst11.QC
+Addr[3] <= 74161:inst11.QD
+Addr[4] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+Addr[5] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Addr[6] <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+Addr[7] <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+Addr[8] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+Addr[9] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+Addr[10] <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+Addr[11] <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+Addr[12] <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+Addr[13] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Addr[14] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+PCINC <= CONTROLLER2:inst31.PCINC
+PCLD <= CONTROLLER2:inst31.PCLD
+IR1 <= InstructionRegister:inst3.IR
+IR0 <= InstructionRegister:inst14.IR
+COUT <= Lab4_CPU:inst.COUT
+MSA1 <= CONTROLLER2:inst31.MSA1
+MSC2 <= CONTROLLER2:inst31.MSC2
+MSA0 <= CONTROLLER2:inst31.MSA0
+MSC1 <= CONTROLLER2:inst31.MSC1
+MSB1 <= CONTROLLER2:inst31.MSB1
+CIN => Lab4_CPU:inst.CIN
+MSC0 <= CONTROLLER2:inst31.MSC0
+MSB0 <= CONTROLLER2:inst31.MSB0
+A3 <= Lab4_CPU:inst.A3
+A2 <= Lab4_CPU:inst.A2
+A1 <= Lab4_CPU:inst.A1
+A0 <= Lab4_CPU:inst.A0
+B3 <= Lab4_CPU:inst.B3
+B2 <= Lab4_CPU:inst.B2
+B1 <= Lab4_CPU:inst.B1
+B0 <= Lab4_CPU:inst.B0
+OUT3 <= Lab4_CPU:inst.OUT3
+OUT2 <= Lab4_CPU:inst.OUT2
+OUT1 <= Lab4_CPU:inst.OUT1
+OUT0 <= Lab4_CPU:inst.OUT0
+B7 <= lab2_decoder:inst410.B
+A7 <= lab2_decoder:inst410.A
+C7 <= lab2_decoder:inst410.C
+D7 <= lab2_decoder:inst410.D
+E7 <= lab2_decoder:inst410.E
+F7 <= lab2_decoder:inst410.F
+G7 <= lab2_decoder:inst410.G
+B8 <= lab2_decoder:inst411.B
+A8 <= lab2_decoder:inst411.A
+C8 <= lab2_decoder:inst411.C
+D8 <= lab2_decoder:inst411.D
+E8 <= lab2_decoder:inst411.E
+F8 <= lab2_decoder:inst411.F
+G8 <= lab2_decoder:inst411.G
+
+
+|Lab6_Part2_ext_ROM|CONTROLLER2:inst31
+IR2 => MSA1.IN0
+IR2 => MSB1.IN0
+IR2 => MSA1.IN0
+IR2 => MSA1.IN0
+IR1 => MSA1.IN1
+IR1 => MSB1.IN1
+IR1 => MSA1.IN1
+IR1 => MSA1.IN1
+IR0 => D1.IN1
+IR0 => D1.IN1
+IR0 => MSA1.IN1
+IR0 => MSB1.IN1
+IR0 => MSA1.IN1
+IR0 => MSA1.IN1
+IR0 => MSB0.IN1
+Q1 => MSB1.IN1
+Q1 => PCINC.IN0
+Q1 => PCLD.IN0
+Q1 => MSA1.IN1
+Q1 => MSA1.IN1
+Q1 => MSA1.IN1
+Q1 => MSA0.IN0
+Q1 => MSB0.IN1
+Q1 => IRLD.IN0
+Q1 => PCINC.IN0
+Q1 => D1.IN1
+Q1 => D1.IN1
+Q0 => D1.IN1
+Q0 => D1.IN1
+Q0 => MSA1.IN1
+Q0 => MSA1.IN1
+Q0 => MSA1.IN1
+Q0 => MSA0.IN1
+Q0 => MSB0.IN1
+Q0 => PCINC.IN1
+Q0 => PCLD.IN1
+Q0 => MSB1.IN1
+Q0 => IRLD.IN1
+Q0 => PCINC.IN1
+MSA1 <= MSA1.DB_MAX_OUTPUT_PORT_TYPE
+MSA0 <= MSA0.DB_MAX_OUTPUT_PORT_TYPE
+MSB1 <= MSB1.DB_MAX_OUTPUT_PORT_TYPE
+MSB0 <= MSB0.DB_MAX_OUTPUT_PORT_TYPE
+MSC2 <= MSC2.DB_MAX_OUTPUT_PORT_TYPE
+MSC1 <= MSC1.DB_MAX_OUTPUT_PORT_TYPE
+MSC0 <= MSA1.DB_MAX_OUTPUT_PORT_TYPE
+IRLD <= IRLD.DB_MAX_OUTPUT_PORT_TYPE
+PCINC <= PCINC.DB_MAX_OUTPUT_PORT_TYPE
+PCLD <= PCLD.DB_MAX_OUTPUT_PORT_TYPE
+D1 <= D1.DB_MAX_OUTPUT_PORT_TYPE
+D0 <= D0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6_Part2_ext_ROM|InstructionRegister:inst2
+IR <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Reset => inst1.ACLR
+CLK => inst1.CLK
+IRLD => 21mux:inst.S
+INPUT => 21mux:inst.A
+
+
+|Lab6_Part2_ext_ROM|InstructionRegister:inst2|21mux:inst
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|Lab6_Part2_ext_ROM|BOARD_VHDL_ROM:inst16
+A[0] => Mux0.IN32782
+A[0] => Mux1.IN32782
+A[0] => Mux2.IN32782
+A[0] => Mux3.IN32782
+A[1] => Mux0.IN32781
+A[1] => Mux1.IN32781
+A[1] => Mux2.IN32781
+A[1] => Mux3.IN32781
+A[2] => Mux0.IN32780
+A[2] => Mux1.IN32780
+A[2] => Mux2.IN32780
+A[2] => Mux3.IN32780
+A[3] => Mux0.IN32779
+A[3] => Mux1.IN32779
+A[3] => Mux2.IN32779
+A[3] => Mux3.IN32779
+A[4] => Mux0.IN32778
+A[4] => Mux1.IN32778
+A[4] => Mux2.IN32778
+A[4] => Mux3.IN32778
+A[5] => Mux0.IN32777
+A[5] => Mux1.IN32777
+A[5] => Mux2.IN32777
+A[5] => Mux3.IN32777
+A[6] => Mux0.IN32776
+A[6] => Mux1.IN32776
+A[6] => Mux2.IN32776
+A[6] => Mux3.IN32776
+A[7] => Mux0.IN32775
+A[7] => Mux1.IN32775
+A[7] => Mux2.IN32775
+A[7] => Mux3.IN32775
+A[8] => Mux0.IN32774
+A[8] => Mux1.IN32774
+A[8] => Mux2.IN32774
+A[8] => Mux3.IN32774
+A[9] => Mux0.IN32773
+A[9] => Mux1.IN32773
+A[9] => Mux2.IN32773
+A[9] => Mux3.IN32773
+A[10] => Mux0.IN32772
+A[10] => Mux1.IN32772
+A[10] => Mux2.IN32772
+A[10] => Mux3.IN32772
+A[11] => Mux0.IN32771
+A[11] => Mux1.IN32771
+A[11] => Mux2.IN32771
+A[11] => Mux3.IN32771
+A[12] => Mux0.IN32770
+A[12] => Mux1.IN32770
+A[12] => Mux2.IN32770
+A[12] => Mux3.IN32770
+A[13] => Mux0.IN32769
+A[13] => Mux1.IN32769
+A[13] => Mux2.IN32769
+A[13] => Mux3.IN32769
+A[14] => Mux0.IN32768
+A[14] => Mux1.IN32768
+A[14] => Mux2.IN32768
+A[14] => Mux3.IN32768
+D[0] <= D[0].DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= D[1].DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= D[2].DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= D[3].DB_MAX_OUTPUT_PORT_TYPE
+D[4] <= D[4].DB_MAX_OUTPUT_PORT_TYPE
+D[5] <= D[5].DB_MAX_OUTPUT_PORT_TYPE
+D[6] <= D[6].DB_MAX_OUTPUT_PORT_TYPE
+D[7] <= D[7].DB_MAX_OUTPUT_PORT_TYPE
+CLK => D_sig[0].CLK
+CLK => D_sig[1].CLK
+CLK => D_sig[2].CLK
+CLK => D_sig[3].CLK
+CLK => D_sig[4].CLK
+CLK => D_sig[5].CLK
+CLK => D_sig[6].CLK
+CLK => D_sig[7].CLK
+OE_L => D[7].IN0
+CE_L => D[7].IN1
+
+
+|Lab6_Part2_ext_ROM|74161:inst11
+clk => f74161:sub.clk
+ldn => f74161:sub.ldn
+clrn => f74161:sub.clrn
+enp => f74161:sub.enp
+ent => f74161:sub.ent
+d => f74161:sub.d
+c => f74161:sub.c
+b => f74161:sub.b
+a => f74161:sub.a
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|Lab6_Part2_ext_ROM|74161:inst11|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6_Part2_ext_ROM|InstructionRegister:inst3
+IR <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Reset => inst1.ACLR
+CLK => inst1.CLK
+IRLD => 21mux:inst.S
+INPUT => 21mux:inst.A
+
+
+|Lab6_Part2_ext_ROM|InstructionRegister:inst3|21mux:inst
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|Lab6_Part2_ext_ROM|InstructionRegister:inst14
+IR <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Reset => inst1.ACLR
+CLK => inst1.CLK
+IRLD => 21mux:inst.S
+INPUT => 21mux:inst.A
+
+
+|Lab6_Part2_ext_ROM|InstructionRegister:inst14|21mux:inst
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst
+A3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst4.ACLR
+RESET => inst16.ACLR
+RESET => inst7.ACLR
+RESET => inst19.ACLR
+RESET => inst6.ACLR
+RESET => inst18.ACLR
+RESET => inst5.ACLR
+RESET => inst17.ACLR
+CLK => inst4.CLK
+CLK => inst16.CLK
+CLK => inst7.CLK
+CLK => inst19.CLK
+CLK => inst6.CLK
+CLK => inst18.CLK
+CLK => inst5.CLK
+CLK => inst17.CLK
+MSA0 => MUX41:inst53.S0
+MSA0 => MUX41:inst49.S0
+MSA0 => MUX41:inst51.S0
+MSA0 => MUX41:inst52.S0
+B3 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+MSB0 => MUX41:inst50.S0
+MSB0 => MUX41:inst40.S0
+MSB0 => MUX41:inst47.S0
+MSB0 => MUX41:inst48.S0
+MSB1 => MUX41:inst50.S1
+MSB1 => MUX41:inst40.S1
+MSB1 => MUX41:inst47.S1
+MSB1 => MUX41:inst48.S1
+OUT3 <= 81mux:inst38.Y
+MSC2 => 81mux:inst38.C
+MSC2 => 81mux:inst45.C
+MSC2 => 81mux:inst42.C
+MSC2 => 81mux:inst39.C
+MSC2 => inst.IN3
+CIN => 74283:inst36.CIN
+A0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+B0 <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+OUT0 <= 81mux:inst45.Y
+A1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+B1 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+OUT1 <= 81mux:inst42.Y
+A2 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B2 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+OUT2 <= 81mux:inst39.Y
+MSC0 => 81mux:inst39.A
+MSC0 => 81mux:inst42.A
+MSC0 => 81mux:inst45.A
+MSC0 => 81mux:inst38.A
+MSC0 => inst.IN1
+MSC1 => 81mux:inst39.B
+MSC1 => 81mux:inst42.B
+MSC1 => 81mux:inst45.B
+MSC1 => 81mux:inst38.B
+MSC1 => inst1.IN0
+IN2 => MUX41:inst48.D0
+IN2 => MUX41:inst52.D0
+MSA1 => MUX41:inst52.S1
+MSA1 => MUX41:inst51.S1
+MSA1 => MUX41:inst49.S1
+MSA1 => MUX41:inst53.S1
+IN1 => MUX41:inst47.D0
+IN1 => MUX41:inst51.D0
+IN0 => MUX41:inst40.D0
+IN0 => MUX41:inst49.D0
+IN3 => MUX41:inst50.D0
+IN3 => MUX41:inst53.D0
+COUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|MUX41:inst53
+Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
+INH => 7.IN0
+S1 => 8.IN0
+S0 => 10.IN0
+D0 => 2.IN3
+D1 => 3.IN3
+D2 => 4.IN3
+D3 => 5.IN3
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|MUX41:inst50
+Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
+INH => 7.IN0
+S1 => 8.IN0
+S0 => 10.IN0
+D0 => 2.IN3
+D1 => 3.IN3
+D2 => 4.IN3
+D3 => 5.IN3
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|81mux:inst38
+d0 => f81mux:sub.d0
+d1 => f81mux:sub.d1
+d2 => f81mux:sub.d2
+d3 => f81mux:sub.d3
+d4 => f81mux:sub.d4
+d5 => f81mux:sub.d5
+d6 => f81mux:sub.d6
+d7 => f81mux:sub.d7
+a => f81mux:sub.a
+b => f81mux:sub.b
+c => f81mux:sub.c
+gn => f81mux:sub.gn
+wn <= f81mux:sub.wn
+y <= f81mux:sub.y
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|81mux:inst38|f81mux:sub
+WN <= 85.DB_MAX_OUTPUT_PORT_TYPE
+D0 => 59.IN0
+A => 19.IN0
+D1 => 60.IN0
+B => 17.IN0
+D2 => 61.IN0
+D3 => 62.IN0
+C => 16.IN0
+D4 => 63.IN0
+D5 => 64.IN0
+D6 => 65.IN0
+D7 => 66.IN0
+GN => 13.IN0
+y <= 82.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|74283:inst36
+a[1] => f74283:sub.a[1]
+a[2] => f74283:sub.a[2]
+a[3] => f74283:sub.a[3]
+a[4] => f74283:sub.a[4]
+b[1] => f74283:sub.b[1]
+b[2] => f74283:sub.b[2]
+b[3] => f74283:sub.b[3]
+b[4] => f74283:sub.b[4]
+cin => f74283:sub.cin
+cout <= f74283:sub.cout
+sum[1] <= f74283:sub.sum[1]
+sum[2] <= f74283:sub.sum[2]
+sum[3] <= f74283:sub.sum[3]
+sum[4] <= f74283:sub.sum[4]
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|74283:inst36|f74283:sub
+SUM1 <= 76.DB_MAX_OUTPUT_PORT_TYPE
+CIN => 108.DATAIN
+A1 => 77.IN1
+A1 => 92.IN1
+A1 => 93.IN1
+B1 => 76.IN1
+B1 => 93.IN0
+B1 => 94.IN1
+COUT <= 91.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 95.IN1
+A2 => 97.IN1
+A2 => 79.IN1
+B2 => 97.IN0
+B2 => 96.IN1
+B2 => 78.IN1
+A3 => 98.IN1
+A3 => 100.IN1
+A3 => 81.IN1
+B3 => 100.IN0
+B3 => 99.IN1
+B3 => 80.IN1
+A4 => 101.IN1
+A4 => 103.IN1
+A4 => 83.IN1
+B4 => 103.IN0
+B4 => 102.IN1
+B4 => 82.IN1
+SUM4 <= 82.DB_MAX_OUTPUT_PORT_TYPE
+SUM3 <= 80.DB_MAX_OUTPUT_PORT_TYPE
+SUM2 <= 78.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|MUX41:inst49
+Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
+INH => 7.IN0
+S1 => 8.IN0
+S0 => 10.IN0
+D0 => 2.IN3
+D1 => 3.IN3
+D2 => 4.IN3
+D3 => 5.IN3
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|MUX41:inst40
+Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
+INH => 7.IN0
+S1 => 8.IN0
+S0 => 10.IN0
+D0 => 2.IN3
+D1 => 3.IN3
+D2 => 4.IN3
+D3 => 5.IN3
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|81mux:inst45
+d0 => f81mux:sub.d0
+d1 => f81mux:sub.d1
+d2 => f81mux:sub.d2
+d3 => f81mux:sub.d3
+d4 => f81mux:sub.d4
+d5 => f81mux:sub.d5
+d6 => f81mux:sub.d6
+d7 => f81mux:sub.d7
+a => f81mux:sub.a
+b => f81mux:sub.b
+c => f81mux:sub.c
+gn => f81mux:sub.gn
+wn <= f81mux:sub.wn
+y <= f81mux:sub.y
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|81mux:inst45|f81mux:sub
+WN <= 85.DB_MAX_OUTPUT_PORT_TYPE
+D0 => 59.IN0
+A => 19.IN0
+D1 => 60.IN0
+B => 17.IN0
+D2 => 61.IN0
+D3 => 62.IN0
+C => 16.IN0
+D4 => 63.IN0
+D5 => 64.IN0
+D6 => 65.IN0
+D7 => 66.IN0
+GN => 13.IN0
+y <= 82.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|MUX41:inst51
+Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
+INH => 7.IN0
+S1 => 8.IN0
+S0 => 10.IN0
+D0 => 2.IN3
+D1 => 3.IN3
+D2 => 4.IN3
+D3 => 5.IN3
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|MUX41:inst47
+Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
+INH => 7.IN0
+S1 => 8.IN0
+S0 => 10.IN0
+D0 => 2.IN3
+D1 => 3.IN3
+D2 => 4.IN3
+D3 => 5.IN3
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|81mux:inst42
+d0 => f81mux:sub.d0
+d1 => f81mux:sub.d1
+d2 => f81mux:sub.d2
+d3 => f81mux:sub.d3
+d4 => f81mux:sub.d4
+d5 => f81mux:sub.d5
+d6 => f81mux:sub.d6
+d7 => f81mux:sub.d7
+a => f81mux:sub.a
+b => f81mux:sub.b
+c => f81mux:sub.c
+gn => f81mux:sub.gn
+wn <= f81mux:sub.wn
+y <= f81mux:sub.y
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|81mux:inst42|f81mux:sub
+WN <= 85.DB_MAX_OUTPUT_PORT_TYPE
+D0 => 59.IN0
+A => 19.IN0
+D1 => 60.IN0
+B => 17.IN0
+D2 => 61.IN0
+D3 => 62.IN0
+C => 16.IN0
+D4 => 63.IN0
+D5 => 64.IN0
+D6 => 65.IN0
+D7 => 66.IN0
+GN => 13.IN0
+y <= 82.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|MUX41:inst52
+Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
+INH => 7.IN0
+S1 => 8.IN0
+S0 => 10.IN0
+D0 => 2.IN3
+D1 => 3.IN3
+D2 => 4.IN3
+D3 => 5.IN3
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|MUX41:inst48
+Q <= 6.DB_MAX_OUTPUT_PORT_TYPE
+INH => 7.IN0
+S1 => 8.IN0
+S0 => 10.IN0
+D0 => 2.IN3
+D1 => 3.IN3
+D2 => 4.IN3
+D3 => 5.IN3
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|81mux:inst39
+d0 => f81mux:sub.d0
+d1 => f81mux:sub.d1
+d2 => f81mux:sub.d2
+d3 => f81mux:sub.d3
+d4 => f81mux:sub.d4
+d5 => f81mux:sub.d5
+d6 => f81mux:sub.d6
+d7 => f81mux:sub.d7
+a => f81mux:sub.a
+b => f81mux:sub.b
+c => f81mux:sub.c
+gn => f81mux:sub.gn
+wn <= f81mux:sub.wn
+y <= f81mux:sub.y
+
+
+|Lab6_Part2_ext_ROM|Lab4_CPU:inst|81mux:inst39|f81mux:sub
+WN <= 85.DB_MAX_OUTPUT_PORT_TYPE
+D0 => 59.IN0
+A => 19.IN0
+D1 => 60.IN0
+B => 17.IN0
+D2 => 61.IN0
+D3 => 62.IN0
+C => 16.IN0
+D4 => 63.IN0
+D5 => 64.IN0
+D6 => 65.IN0
+D7 => 66.IN0
+GN => 13.IN0
+y <= 82.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6_Part2_ext_ROM|lab2_decoder:inst410
+D <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+T_L => inst25.IN0
+X[0] => inst[0].IN0
+X[0] => inst3.IN3
+X[0] => inst5.IN3
+X[0] => inst10.IN3
+X[0] => rtwertwet.IN3
+X[0] => inst12.IN3
+X[0] => inst14.IN3
+X[0] => qwrwr8.IN3
+X[0] => wtrewtwert.IN3
+X[0] => inst35.IN0
+X[0] => inst39.IN2
+X[0] => inst40.IN2
+X[1] => inst[1].IN0
+X[1] => inst3.IN2
+X[1] => inst2.IN2
+X[1] => inst6.IN2
+X[1] => inst10.IN2
+X[1] => inst13.IN2
+X[1] => wrqwre.IN2
+X[1] => inst14.IN2
+X[1] => wtrewtwert.IN2
+X[1] => inst32.IN3
+X[1] => inst34.IN3
+X[1] => inst35.IN3
+X[1] => inst38.IN3
+X[2] => inst[2].IN0
+X[2] => inst6.IN1
+X[2] => inst5.IN1
+X[2] => inst11.IN1
+X[2] => inst13.IN1
+X[2] => inst12.IN1
+X[2] => inst14.IN1
+X[2] => inst4.IN1
+X[2] => wtrewtwert.IN1
+X[2] => inst31.IN1
+X[2] => inst34.IN1
+X[3] => inst[3].IN0
+X[3] => inst7.IN0
+X[3] => inst10.IN0
+X[3] => rtwertwet.IN0
+X[3] => inst11.IN0
+X[3] => inst13.IN0
+X[3] => inst12.IN0
+X[3] => wrqwre.IN0
+X[3] => inst14.IN0
+X[3] => inst34.IN2
+X[3] => inst35.IN2
+X[3] => inst38.IN2
+E <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+F <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+G <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+A <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+B <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6_Part2_ext_ROM|lab2_decoder:inst411
+D <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+T_L => inst25.IN0
+X[0] => inst[0].IN0
+X[0] => inst3.IN3
+X[0] => inst5.IN3
+X[0] => inst10.IN3
+X[0] => rtwertwet.IN3
+X[0] => inst12.IN3
+X[0] => inst14.IN3
+X[0] => qwrwr8.IN3
+X[0] => wtrewtwert.IN3
+X[0] => inst35.IN0
+X[0] => inst39.IN2
+X[0] => inst40.IN2
+X[1] => inst[1].IN0
+X[1] => inst3.IN2
+X[1] => inst2.IN2
+X[1] => inst6.IN2
+X[1] => inst10.IN2
+X[1] => inst13.IN2
+X[1] => wrqwre.IN2
+X[1] => inst14.IN2
+X[1] => wtrewtwert.IN2
+X[1] => inst32.IN3
+X[1] => inst34.IN3
+X[1] => inst35.IN3
+X[1] => inst38.IN3
+X[2] => inst[2].IN0
+X[2] => inst6.IN1
+X[2] => inst5.IN1
+X[2] => inst11.IN1
+X[2] => inst13.IN1
+X[2] => inst12.IN1
+X[2] => inst14.IN1
+X[2] => inst4.IN1
+X[2] => wtrewtwert.IN1
+X[2] => inst31.IN1
+X[2] => inst34.IN1
+X[3] => inst[3].IN0
+X[3] => inst7.IN0
+X[3] => inst10.IN0
+X[3] => rtwertwet.IN0
+X[3] => inst11.IN0
+X[3] => inst13.IN0
+X[3] => inst12.IN0
+X[3] => wrqwre.IN0
+X[3] => inst14.IN0
+X[3] => inst34.IN2
+X[3] => inst35.IN2
+X[3] => inst38.IN2
+E <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+F <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+G <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+A <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+B <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+
+

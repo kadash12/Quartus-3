@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Green",
+					"strict" : false
+				},
+				{
+					"name" : "Q3",
+					"strict" : false
+				},
+				{
+					"name" : "Q2",
+					"strict" : false
+				},
+				{
+					"name" : "Q1",
+					"strict" : false
+				},
+				{
+					"name" : "Q0",
+					"strict" : false
+				},
+				{
+					"name" : "Yellow",
+					"strict" : false
+				},
+				{
+					"name" : "Red",
+					"strict" : false
+				},
+				{
+					"name" : "EV_L",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "CW",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

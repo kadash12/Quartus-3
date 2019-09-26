@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Sat Jul 13 22:25:31 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : Lab5_DFF_Traf_Cont
+Top-level Entity Name : Lab5_DFF_Traf_Cont
+Family : MAX 10
+Device : 10M02SCU169C8G
+Power Models : Final
+Total Thermal Power Dissipation : 72.25 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 66.77 mW
+I/O Thermal Power Dissipation : 5.49 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

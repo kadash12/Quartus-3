@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Johnny Li/Desktop/Quartus3/lab4/Lab4_ALU/simulation/qsim
+vhard_block
+Z1 !s110 1562269327
+!i10b 1
+!s100 :_<CT0WfkBYITShg[XTDc1
+I[gK_nE@Lda?g[mEcDKW@o0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1562269324
+Z4 8Lab4_ALU.vo
+Z5 FLab4_ALU.vo
+L0 597
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1562269327.000000
+Z8 !s107 Lab4_ALU.vo|
+Z9 !s90 -work|work|Lab4_ALU.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vLab4_ALU
+R1
+!i10b 1
+!s100 zb]j53GN39N67@YEWcg<T1
+Ika3F2?V]<@E;[UGVYkZ9S2
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@lab4_@a@l@u
+vLab4_ALU_vlg_vec_tst
+!s110 1562269328
+!i10b 1
+!s100 <la;mKBR@<8RCC>>DSeY@1
+I6SGILh<:FH0]Z7B?>LMF51
+R2
+R0
+w1562269319
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@lab4_@a@l@u_vlg_vec_tst

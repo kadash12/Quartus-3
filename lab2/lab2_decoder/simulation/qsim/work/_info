@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Johnny Li/Desktop/Quartus3/lab2/lab2_decoder/simulation/qsim
+vhard_block
+Z1 !s110 1559543380
+!i10b 1
+!s100 cID@A<G9mBi]o9gRYFcLD2
+ISF]iY0UBdkz;oMR_H3?aF3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1559543373
+Z4 8lab2_decoder.vo
+Z5 Flab2_decoder.vo
+L0 569
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1559543380.000000
+Z8 !s107 lab2_decoder.vo|
+Z9 !s90 -work|work|lab2_decoder.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vlab2_decoder
+R1
+!i10b 1
+!s100 Pild?;YIZP`LA2=mb7LGP3
+I6Q16JLHH4L[BS9e0Z[FJI3
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vlab2_decoder_vlg_vec_tst
+R1
+!i10b 1
+!s100 9383:79CgjAaLg_@lQG]81
+ITAihIP>8B17iNXCA<S@0O0
+R2
+R0
+w1559543369
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11

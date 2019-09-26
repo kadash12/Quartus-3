@@ -1,0 +1,217 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "IRLD",
+					"strict" : false
+				},
+				{
+					"name" : "IR2",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "IN[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IN[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PCINC",
+					"strict" : false
+				},
+				{
+					"name" : "PCLD",
+					"strict" : false
+				},
+				{
+					"name" : "IR1",
+					"strict" : false
+				},
+				{
+					"name" : "IR0",
+					"strict" : false
+				},
+				{
+					"name" : "COUT",
+					"strict" : false
+				},
+				{
+					"name" : "MSA1",
+					"strict" : false
+				},
+				{
+					"name" : "MSC2",
+					"strict" : false
+				},
+				{
+					"name" : "MSA0",
+					"strict" : false
+				},
+				{
+					"name" : "MSC1",
+					"strict" : false
+				},
+				{
+					"name" : "MSB1",
+					"strict" : false
+				},
+				{
+					"name" : "MSC0",
+					"strict" : false
+				},
+				{
+					"name" : "MSB0",
+					"strict" : false
+				},
+				{
+					"name" : "A3",
+					"strict" : false
+				},
+				{
+					"name" : "A2",
+					"strict" : false
+				},
+				{
+					"name" : "A1",
+					"strict" : false
+				},
+				{
+					"name" : "A0",
+					"strict" : false
+				},
+				{
+					"name" : "B3",
+					"strict" : false
+				},
+				{
+					"name" : "B2",
+					"strict" : false
+				},
+				{
+					"name" : "B1",
+					"strict" : false
+				},
+				{
+					"name" : "B0",
+					"strict" : false
+				},
+				{
+					"name" : "OUT3",
+					"strict" : false
+				},
+				{
+					"name" : "OUT2",
+					"strict" : false
+				},
+				{
+					"name" : "OUT1",
+					"strict" : false
+				},
+				{
+					"name" : "OUT0",
+					"strict" : false
+				},
+				{
+					"name" : "B7",
+					"strict" : false
+				},
+				{
+					"name" : "A7",
+					"strict" : false
+				},
+				{
+					"name" : "C7",
+					"strict" : false
+				},
+				{
+					"name" : "D7",
+					"strict" : false
+				},
+				{
+					"name" : "E7",
+					"strict" : false
+				},
+				{
+					"name" : "F7",
+					"strict" : false
+				},
+				{
+					"name" : "G7",
+					"strict" : false
+				},
+				{
+					"name" : "B8",
+					"strict" : false
+				},
+				{
+					"name" : "A8",
+					"strict" : false
+				},
+				{
+					"name" : "C8",
+					"strict" : false
+				},
+				{
+					"name" : "D8",
+					"strict" : false
+				},
+				{
+					"name" : "E8",
+					"strict" : false
+				},
+				{
+					"name" : "F8",
+					"strict" : false
+				},
+				{
+					"name" : "G8",
+					"strict" : false
+				},
+				{
+					"name" : "CIN",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "MemCLK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

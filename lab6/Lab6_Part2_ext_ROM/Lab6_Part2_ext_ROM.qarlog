@@ -1,0 +1,21 @@
+Quartus Prime Archive log --	C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Lab6_Part2_ext_ROM.qarlog
+
+Archive:	C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Lab6_Part2_ext_ROM.qar
+Date:		Mon Jul 22 11:17:37 2019
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Lab6_Part2_ext_ROM.bdf
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Lab6_Part2_ext_ROM.qpf
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Lab6_Part2_ext_ROM.qsf
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Lab6_Part2_ext_ROM.vhd
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Waveform.vwf
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/board_ROM_vhdl_init.vhd
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/board_vhdl_ROM.vhd
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/instructionregister.bdf
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/lab4_cpu.bdf
+c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 10 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

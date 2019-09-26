@@ -1,0 +1,19 @@
+Quartus Prime Archive log --	C:/Users/Johnny Li/Desktop/Quartus3/lab6/LAB6_Part1/LAB6_Part1.qarlog
+
+Archive:	C:/Users/Johnny Li/Desktop/Quartus3/lab6/LAB6_Part1/LAB6_Part1.qar
+Date:		Wed Jul 17 18:08:49 2019
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/LAB6_Part1/InstructionRegister.bdf
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/LAB6_Part1/LAB6_Part1.bdf
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/LAB6_Part1/LAB6_Part1.qpf
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/LAB6_Part1/LAB6_Part1.qsf
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/LAB6_Part1/LAB6_Part1.vhd
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/LAB6_Part1/Waveform.vwf
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/LAB6_Part1/lab4_cpu.bdf
+c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 8 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

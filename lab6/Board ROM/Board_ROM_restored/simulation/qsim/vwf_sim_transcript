@@ -1,0 +1,160 @@
+Determining the location of the ModelSim executable...
+
+Using: C:\intelFPGA_lite\17.1\modelsim_ase\win32aloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Board_ROM -c Board_ROM --vector_source="C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Board ROM/Board_ROM_restored/Waveform.vwf" --testbench_file="C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Board ROM/Board_ROM_restored/simulation/qsim/Waveform.vwf.vht"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Sun Jul 21 19:38:54 2019
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Board_ROM -c Board_ROM --vector_source="C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Board ROM/Board_ROM_restored/Waveform.vwf" --testbench_file="C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Board ROM/Board_ROM_restored/simulation/qsim/Waveform.vwf.vht"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+es
+
+Completed successfully. 
+
+**** Generating the timing simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Board ROM/Board_ROM_restored/simulation/qsim/" Board_ROM -c Board_ROM
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Sun Jul 21 19:38:58 2019
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Board ROM/Board_ROM_restored/simulation/qsim/" Board_ROM -c Board_ROM
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204018): Generated files "Board_ROM.vho" and "Board_ROM_vhd.sdo" in directory "C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Board ROM/Board_ROM_restored/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4620 megabytes
+    Info: Processing ended: Sun Jul 21 19:39:02 2019
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Board ROM/Board_ROM_restored/simulation/qsim/Board_ROM.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/vsim -c -do Board_ROM.do
+
+Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+
+
+# 10.5b
+
+
+# do Board_ROM.do
+
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:39:13 on Jul 21,2019
+# vcom -work work Board_ROM.vho 
+
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package maxv_atom_pack
+# -- Loading package maxv_components
+# -- Compiling entity ROM_test
+
+# -- Compiling architecture structure of ROM_test
+# End time: 19:39:14 on Jul 21,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:39:14 on Jul 21,2019
+# vcom -work work Waveform.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ROM_test_vhd_vec_tst
+# -- Compiling architecture ROM_test_arch of ROM_test_vhd_vec_tst
+
+# End time: 19:39:14 on Jul 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -sdfmax ROM_test_vhd_vec_tst/i1=Board_ROM_vhd.sdo -L maxv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ROM_test_vhd_vec_tst 
+# Start time: 19:39:16 on Jul 21,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.rom_test_vhd_vec_tst(rom_test_arch)
+# SDF 10.5b Compiler 2016.10 Oct  5 2016
+# 
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading maxv.maxv_atom_pack(body)
+# Loading maxv.maxv_components
+# Loading work.rom_test(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading maxv.maxv_io(behave)
+# Loading maxv.maxv_lcell(vital_le_atom)
+# Loading maxv.maxv_asynch_lcell(vital_le)
+# Loading maxv.maxv_lcell_register(vital_le_reg)
+# Loading instances from Board_ROM_vhd.sdo
+# Loading timing data from Board_ROM_vhd.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /rom_test_vhd_vec_tst File: Waveform.vwf.vht
+# after#29
+
+# End time: 19:39:24 on Jul 21,2019, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 0
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Board ROM/Board_ROM_restored/Waveform.vwf...
+
+Reading C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Board ROM/Board_ROM_restored/simulation/qsim/Board_ROM.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to C:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Board ROM/Board_ROM_restored/simulation/qsim/Board_ROM_20190721193924.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sun Jul 21 19:37:58 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : Board_ROM
+Top-level Entity Name : ROM_test
+Family : MAX V
+Device : 5M570ZT100C5
+Timing Models : Final
+Total logic elements : 9 / 570 ( 2 % )
+Total pins : 30 / 74 ( 41 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

@@ -1,0 +1,17 @@
+Quartus Prime Archive log --	C:/Users/Johnny Li/Desktop/Quartus3/lab5/Lab5_not_DFF_Traf_Cont/Lab5_not_DFF_Traf_Cont.qarlog
+
+Archive:	C:/Users/Johnny Li/Desktop/Quartus3/lab5/Lab5_not_DFF_Traf_Cont/Lab5_not_DFF_Traf_Cont.qar
+Date:		Sat Jul 13 19:13:44 2019
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Johnny Li/Desktop/Quartus3/lab5/Lab5_not_DFF_Traf_Cont/Lab5_not_DFF_Traf_Cont.bdf
+C:/Users/Johnny Li/Desktop/Quartus3/lab5/Lab5_not_DFF_Traf_Cont/Lab5_not_DFF_Traf_Cont.qpf
+C:/Users/Johnny Li/Desktop/Quartus3/lab5/Lab5_not_DFF_Traf_Cont/Lab5_not_DFF_Traf_Cont.qsf
+C:/Users/Johnny Li/Desktop/Quartus3/lab5/Lab5_not_DFF_Traf_Cont/Lab5_not_DFF_Traf_Cont.vhd
+C:/Users/Johnny Li/Desktop/Quartus3/lab5/Lab5_not_DFF_Traf_Cont/Waveform.vwf
+c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 6 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

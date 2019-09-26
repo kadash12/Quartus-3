@@ -1,0 +1,18 @@
+Fitter Status : Successful - Tue Jul 23 20:15:35 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : Lab6_Part2_ext_ROM
+Top-level Entity Name : Lab6_Part2_ext_ROM
+Family : MAX 10
+Device : 10M02SCU169C8G
+Timing Models : Final
+Total logic elements : 75 / 2,304 ( 3 % )
+    Total combinational functions : 70 / 2,304 ( 3 % )
+    Dedicated logic registers : 22 / 2,304 ( < 1 % )
+Total registers : 22
+Total pins : 63 / 130 ( 48 % )
+Total virtual pins : 0
+Total memory bits : 0 / 110,592 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 32 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0

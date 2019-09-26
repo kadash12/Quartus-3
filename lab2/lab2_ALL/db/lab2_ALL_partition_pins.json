@@ -1,0 +1,117 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Y_L",
+					"strict" : false
+				},
+				{
+					"name" : "D",
+					"strict" : false
+				},
+				{
+					"name" : "E",
+					"strict" : false
+				},
+				{
+					"name" : "F",
+					"strict" : false
+				},
+				{
+					"name" : "G",
+					"strict" : false
+				},
+				{
+					"name" : "C",
+					"strict" : false
+				},
+				{
+					"name" : "A",
+					"strict" : false
+				},
+				{
+					"name" : "B",
+					"strict" : false
+				},
+				{
+					"name" : "Y0",
+					"strict" : false
+				},
+				{
+					"name" : "Y1",
+					"strict" : false
+				},
+				{
+					"name" : "D2_L",
+					"strict" : false
+				},
+				{
+					"name" : "S1",
+					"strict" : false
+				},
+				{
+					"name" : "D1",
+					"strict" : false
+				},
+				{
+					"name" : "S0",
+					"strict" : false
+				},
+				{
+					"name" : "D0",
+					"strict" : false
+				},
+				{
+					"name" : "D3_L",
+					"strict" : false
+				},
+				{
+					"name" : "T_L",
+					"strict" : false
+				},
+				{
+					"name" : "X0",
+					"strict" : false
+				},
+				{
+					"name" : "X1",
+					"strict" : false
+				},
+				{
+					"name" : "X2",
+					"strict" : false
+				},
+				{
+					"name" : "X3",
+					"strict" : false
+				},
+				{
+					"name" : "Z_L",
+					"strict" : false
+				},
+				{
+					"name" : "X",
+					"strict" : false
+				},
+				{
+					"name" : "W",
+					"strict" : false
+				},
+				{
+					"name" : "Y",
+					"strict" : false
+				},
+				{
+					"name" : "V",
+					"strict" : false
+				},
+				{
+					"name" : "PP",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Johnny Li/Desktop/Quartus3/lab1_ex/lab1_ex.bdf
+source_file = 1, C:/Users/Johnny Li/Desktop/Quartus3/lab1_ex/Waveform.vwf
+source_file = 1, C:/Users/Johnny Li/Desktop/Quartus3/lab1_ex/db/lab1_ex.cbx.xml
+design_name = hard_block
+design_name = lab1_ex
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, lab1_ex, 1
+instance = comp, \Y~output\, Y~output, lab1_ex, 1
+instance = comp, \C~input\, C~input, lab1_ex, 1
+instance = comp, \B~input\, B~input, lab1_ex, 1
+instance = comp, \A~input\, A~input, lab1_ex, 1
+instance = comp, \~QUARTUS_CREATED_UNVM~\, ~QUARTUS_CREATED_UNVM~, lab1_ex, 1

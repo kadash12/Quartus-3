@@ -1,0 +1,167 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition"
+
+// DATE "06/07/2019 10:28:00"
+
+// 
+// Device: Altera 10M02SCU169C8G Package UFBGA169
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module lab2quiz (
+	D,
+	I,
+	T,
+	E,
+	G_L,
+	Z);
+output 	D;
+input 	I;
+input 	T;
+input 	E;
+input 	G_L;
+input 	Z;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \D~output_o ;
+wire \I~input_o ;
+wire \T~input_o ;
+wire \Z~input_o ;
+wire \G_L~input_o ;
+wire \E~input_o ;
+wire \inst|9~0_combout ;
+wire \inst|9~1_combout ;
+
+
+fiftyfivenm_io_obuf \D~output (
+	.i(\inst|9~1_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\D~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \D~output .bus_hold = "false";
+defparam \D~output .open_drain_output = "false";
+// synopsys translate_on
+
+fiftyfivenm_io_ibuf \I~input (
+	.i(I),
+	.ibar(gnd),
+	.nsleep(vcc),
+	.o(\I~input_o ));
+// synopsys translate_off
+defparam \I~input .bus_hold = "false";
+defparam \I~input .listen_to_nsleep_signal = "false";
+defparam \I~input .simulate_z_as = "z";
+// synopsys translate_on
+
+fiftyfivenm_io_ibuf \T~input (
+	.i(T),
+	.ibar(gnd),
+	.nsleep(vcc),
+	.o(\T~input_o ));
+// synopsys translate_off
+defparam \T~input .bus_hold = "false";
+defparam \T~input .listen_to_nsleep_signal = "false";
+defparam \T~input .simulate_z_as = "z";
+// synopsys translate_on
+
+fiftyfivenm_io_ibuf \Z~input (
+	.i(Z),
+	.ibar(gnd),
+	.nsleep(vcc),
+	.o(\Z~input_o ));
+// synopsys translate_off
+defparam \Z~input .bus_hold = "false";
+defparam \Z~input .listen_to_nsleep_signal = "false";
+defparam \Z~input .simulate_z_as = "z";
+// synopsys translate_on
+
+fiftyfivenm_io_ibuf \G_L~input (
+	.i(G_L),
+	.ibar(gnd),
+	.nsleep(vcc),
+	.o(\G_L~input_o ));
+// synopsys translate_off
+defparam \G_L~input .bus_hold = "false";
+defparam \G_L~input .listen_to_nsleep_signal = "false";
+defparam \G_L~input .simulate_z_as = "z";
+// synopsys translate_on
+
+fiftyfivenm_io_ibuf \E~input (
+	.i(E),
+	.ibar(gnd),
+	.nsleep(vcc),
+	.o(\E~input_o ));
+// synopsys translate_off
+defparam \E~input .bus_hold = "false";
+defparam \E~input .listen_to_nsleep_signal = "false";
+defparam \E~input .simulate_z_as = "z";
+// synopsys translate_on
+
+fiftyfivenm_lcell_comb \inst|9~0 (
+// Equation(s):
+// \inst|9~0_combout  = (\E~input_o  & ((\Z~input_o ))) # (!\E~input_o  & (\G_L~input_o  & !\Z~input_o ))
+
+	.dataa(\G_L~input_o ),
+	.datab(\E~input_o ),
+	.datac(\Z~input_o ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\inst|9~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|9~0 .lut_mask = 16'hC2C2;
+defparam \inst|9~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+fiftyfivenm_lcell_comb \inst|9~1 (
+// Equation(s):
+// \inst|9~1_combout  = (\I~input_o  & (((!\Z~input_o  & \inst|9~0_combout )))) # (!\I~input_o  & (\T~input_o  & (\Z~input_o  & !\inst|9~0_combout )))
+
+	.dataa(\I~input_o ),
+	.datab(\T~input_o ),
+	.datac(\Z~input_o ),
+	.datad(\inst|9~0_combout ),
+	.cin(gnd),
+	.combout(\inst|9~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|9~1 .lut_mask = 16'h0A40;
+defparam \inst|9~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign D = \D~output_o ;
+
+endmodule

@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Johnny Li/Desktop/Quartus3/lab2/lab2quiz/simulation/qsim
+vhard_block
+!s110 1559917219
+!i10b 1
+!s100 iWd;18Ll=m]Aie`7aagO13
+IY5L4^^<7kYh;ViM8U7=n_1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1559917217
+Z2 8lab2quiz.vo
+Z3 Flab2quiz.vo
+L0 245
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1559917219.000000
+Z5 !s107 lab2quiz.vo|
+Z6 !s90 -work|work|lab2quiz.vo|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+vlab2quiz
+Z9 !s110 1559917682
+!i10b 1
+!s100 :BgJkLLYFQbl=MZTRd:HK0
+I]`fD4D?@C;0cB@X2;6B]B1
+R1
+R0
+w1559917680
+R2
+R3
+L0 31
+R4
+r1
+!s85 0
+31
+Z10 !s108 1559917682.000000
+R5
+R6
+!i113 1
+R7
+R8
+vlab2quiz_vlg_vec_tst
+R9
+!i10b 1
+!s100 3f@z<YBRmVndFOYN^zdT60
+I53anZXXkWTMA4kPHL;EbJ3
+R1
+R0
+w1559917673
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R4
+r1
+!s85 0
+31
+R10
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R7
+R8

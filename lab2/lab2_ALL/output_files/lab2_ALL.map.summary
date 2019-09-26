@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Tue Jun 04 17:32:05 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : lab2_ALL
+Top-level Entity Name : lab2_ALL
+Family : MAX 10
+Total logic elements : 19
+    Total combinational functions : 19
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 27
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

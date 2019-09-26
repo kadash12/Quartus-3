@@ -1,0 +1,77 @@
+% File name = eprom.mif					%
+% ************************************* %
+% Sample program for G-CPU				%
+% *************************************	%
+DEPTH = 4096;	% Address Bus Size %
+WIDTH = 8;		% Data Format %
+ADDRESS_RADIX = HEX;	% Address Format %
+DATA_RADIX = HEX;		% Data Format %
+
+CONTENT 
+BEGIN
+
+[0..03D6]	:	00; 	% zero memory %	
+
+% Retrieve data value for comparison. %
+03D7		: 	08;	% LDX $1800 %
+03D8		: 	00;	
+03D9		:	18;	
+
+% Store temp data value. %
+03DA		: 	09;	% LOOP LDY $1500 %
+03DB		: 	00;	
+03DC		:	15;	
+
+% Load REGA and increment. %
+03DD		:	0C;	% LDAA 0,X %
+03DE		:  	00;	
+03DF		:	30;	% INX %
+
+% Move value from REGA to REGB. %
+03E0		:	00;	% TAB %
+
+% Load REGA with #1. %
+03E1		: 	02;	% LDAA #1 %
+03E2		:	1;
+
+% Store value REGB in temp address and increment. %
+03E3		:	13;	% STAB %
+03E4		:	00;	% $1500 %
+
+% 2's complement to get negative number. %
+03E5		:	1B; 	% COMB %
+03E6		:	15;	% SUM_AB %
+
+% Load REGA with second value for comparison and increment. %
+03E7		:	0C;	% LDAA 0,X %
+03E8		:  	00;
+03E9		:	30;	% INX %
+
+% Store REGA value to temp address. %
+03EA		:	11;	% STAA %
+03EB		:	1;	% Add #1 %
+
+% Subtract by addition of negative number and store in REGA. %
+03EC		:	14; 	% SUM_BA %
+
+% Check if positive result. If true branch to F5. %
+03ED		:	23;	% BP %
+03EE		:       F5;
+
+%*******************************************************%
+
+% Load value in 1501 to REGB. %
+03F5		: 	05;	% LDAB $1501 %
+03F6		: 	01;	
+03F7		:	15;	
+
+--------------------------------------
+% Store output data value at REGB to REGY addess ($1510). %
+
+03FB		:	13;	% STAB 0,Y %
+03FC		:	9;
+
+
+
+[04F0..FF]		:	00;	% zero rest of memory %
+END;

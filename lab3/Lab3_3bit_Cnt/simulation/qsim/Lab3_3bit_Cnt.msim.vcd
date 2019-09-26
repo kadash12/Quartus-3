@@ -1,0 +1,439 @@
+$comment
+	File created using the following command:
+		vcd file Lab3_3bit_Cnt.msim.vcd -direction
+$end
+$date
+	Tue Jun 11 23:32:47 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module Lab3_3bit_Cnt_vlg_vec_tst $end
+$var reg 1 ! B $end
+$var reg 1 " CLK $end
+$var reg 1 # F $end
+$var reg 1 $ Reset0 $end
+$var reg 1 % Reset1 $end
+$var reg 1 & Reset2 $end
+$var reg 1 ' Set0 $end
+$var reg 1 ( Set1 $end
+$var reg 1 ) Set2 $end
+$var wire 1 * Q0 $end
+$var wire 1 + Q1 $end
+$var wire 1 , Q2_L $end
+$var wire 1 - Sp $end
+
+$scope module i1 $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var tri1 1 1 devclrn $end
+$var tri1 1 2 devpor $end
+$var tri1 1 3 devoe $end
+$var wire 1 4 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 5 ~QUARTUS_CREATED_UNVM~~busy $end
+$var wire 1 6 Q1~output_o $end
+$var wire 1 7 Q0~output_o $end
+$var wire 1 8 Q2_L~output_o $end
+$var wire 1 9 Sp~output_o $end
+$var wire 1 : Set1~input_o $end
+$var wire 1 ; Reset1~input_o $end
+$var wire 1 < inst85|9~1_combout $end
+$var wire 1 = CLK~input_o $end
+$var wire 1 > CLK~inputclkctrl_outclk $end
+$var wire 1 ? B~input_o $end
+$var wire 1 @ F~input_o $end
+$var wire 1 A inst121~2_combout $end
+$var wire 1 B Reset2~input_o $end
+$var wire 1 C Set2~input_o $end
+$var wire 1 D inst2|9~1_combout $end
+$var wire 1 E inst15~combout $end
+$var wire 1 F Set0~input_o $end
+$var wire 1 G Reset0~input_o $end
+$var wire 1 H inst85|10~1_combout $end
+$var wire 1 I inst27~1_combout $end
+$var wire 1 J inst27~0_combout $end
+$var wire 1 K inst85|10~3_combout $end
+$var wire 1 L inst85|10~0_combout $end
+$var wire 1 M inst85|10~_emulated_q $end
+$var wire 1 N inst85|10~2_combout $end
+$var wire 1 O inst17~0_combout $end
+$var wire 1 P inst14~0_combout $end
+$var wire 1 Q inst2|9~3_combout $end
+$var wire 1 R inst2|9~0_combout $end
+$var wire 1 S inst2|9~_emulated_q $end
+$var wire 1 T inst2|9~2_combout $end
+$var wire 1 U inst121~0_combout $end
+$var wire 1 V inst121~1_combout $end
+$var wire 1 W inst85|9~3_combout $end
+$var wire 1 X inst85|9~0_combout $end
+$var wire 1 Y inst85|9~_emulated_q $end
+$var wire 1 Z inst85|9~2_combout $end
+$var wire 1 [ inst1~0_combout $end
+$var wire 1 \ inst1~1_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+1#
+0$
+0%
+0&
+1'
+1(
+1)
+0*
+0+
+1,
+0-
+0.
+1/
+x0
+11
+12
+13
+04
+z5
+06
+07
+18
+09
+1:
+0;
+0<
+0=
+0>
+1?
+1@
+0A
+0B
+1C
+0D
+0E
+1F
+0G
+0H
+1I
+0J
+0K
+1L
+0M
+0N
+0O
+0P
+0Q
+1R
+0S
+0T
+0U
+1V
+1W
+1X
+0Y
+0Z
+0[
+0\
+$end
+#50000
+1"
+1=
+1>
+#100000
+1&
+1%
+1$
+0"
+0=
+1G
+1;
+1B
+0>
+0L
+0X
+0R
+#125000
+0'
+0F
+1L
+1H
+1N
+17
+1J
+1*
+1K
+0K
+#150000
+1"
+1=
+1>
+1Y
+1Z
+16
+1P
+0I
+1+
+1\
+1Q
+19
+1-
+#200000
+1'
+0"
+0=
+1F
+0>
+0L
+#250000
+1"
+1=
+1>
+1S
+1T
+08
+0V
+0P
+0,
+1K
+0W
+0\
+0Q
+09
+0-
+#300000
+0"
+0=
+0>
+#325000
+0&
+0%
+0$
+0G
+0;
+0B
+1L
+0H
+1X
+0T
+1R
+0N
+0Z
+06
+07
+18
+1V
+0J
+1I
+1,
+0*
+0+
+1W
+0K
+0Y
+0S
+#350000
+1"
+1=
+1>
+#400000
+1&
+1%
+1$
+0"
+0=
+1G
+1;
+1B
+0>
+0L
+0X
+0R
+#425000
+0)
+0(
+0:
+0C
+1X
+1<
+1T
+1R
+1D
+1Z
+16
+08
+0V
+0I
+0,
+1+
+0W
+1K
+1Q
+1W
+0K
+#450000
+1"
+1=
+1>
+#500000
+1)
+1(
+0"
+0=
+1:
+1C
+0>
+0X
+0R
+#550000
+1"
+1=
+1>
+1Y
+1S
+0T
+0Z
+06
+18
+1V
+1I
+1,
+0+
+0W
+#600000
+0"
+0=
+0>
+#650000
+1"
+1=
+1>
+0Y
+1Z
+16
+0V
+1P
+0I
+1+
+1W
+0Q
+#700000
+0"
+0=
+0>
+#750000
+1"
+1=
+1>
+1Y
+0S
+1T
+0Z
+06
+08
+1V
+0P
+1I
+0,
+0+
+0W
+1Q
+1K
+#800000
+0"
+0=
+0>
+#850000
+1"
+1=
+1>
+0Y
+1S
+1M
+0T
+1Z
+1N
+17
+16
+18
+1P
+1J
+0I
+1,
+1+
+1*
+0K
+1\
+0Q
+1K
+19
+1-
+#900000
+0"
+0=
+0>
+#950000
+1"
+1=
+1>
+0S
+1T
+08
+0V
+0P
+0,
+0K
+1W
+0\
+1Q
+09
+0-
+#1000000
+0"
+0=
+0>
+#1050000
+1"
+1=
+1>
+1Y
+1S
+0M
+0T
+0Z
+0N
+07
+06
+18
+1V
+0J
+1I
+1,
+0+
+0*
+1K
+0W
+0K
+#1100000
+0"
+0=
+0>
+#1150000
+1"
+1=
+1>
+0Y
+1Z
+16
+0V
+1P
+0I
+1+
+1W
+0Q
+#1200000

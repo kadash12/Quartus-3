@@ -1,0 +1,63 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity CONTROLLER2 is port (
+	IR2, IR1, IR0: in bit;
+	Q1, Q0: in bit;
+	MSA1, MSA0: out bit;
+	MSB1, MSB0: out bit;
+	MSC2, MSC1, MSC0: out bit;
+	IRLD, PCINC, PCLD: out bit;
+	D1, D0: out bit
+);
+end CONTROLLER2;
+
+architecture logic of CONTROLLER2 is 
+begin
+
+--D1 = (/IR2*IR1*IR0*/Q1*Q0) + (IR2*/IR1*IR0*/Q1*Q0)
+	D1 <= ((NOT IR2) AND IR1 AND IR0 AND (NOT Q1) AND Q0)
+		OR (IR2 AND (NOT IR1) AND IR0 AND (NOT Q1) AND Q0);
+		
+--D0 = (/Q1*/Q0) + (IR2*/IR1*IR0*/Q1*Q0)
+	D0 <= ((NOT Q1) AND (NOT Q0)) 
+		OR (IR2 AND (NOT IR1) AND IR0 AND (NOT Q1) AND Q0);
+		
+--MSA1 = (/IR2*/IR1*IR0*/Q1*Q0) + (/IR2*IR1*/IR0*/Q1*Q0) + (IR2*/IR1*/IR0*/Q1*Q0)
+	MSA1 <= ((NOT IR2) AND (NOT IR1) AND IR0 AND (NOT Q1) AND Q0)
+		OR ((NOT IR2) AND IR1 AND (NOT IR0) AND (NOT Q1) AND Q0)
+		OR (IR2 AND (NOT IR1) AND (NOT IR0) AND (NOT Q1) AND Q0);
+		
+--MSA0 = (/Q1+Q0)
+	MSA0 <= ((NOT Q1) OR Q0);
+	
+--MSB1 = (IR2+IR1+IR0+Q1+/Q0)
+	MSB1 <= (IR2 OR IR1 OR IR0 OR Q1 OR (NOT Q0));
+	
+--MSB0 = (/IR2*/IR1*/IR0*/Q1*Q0)
+	MSB0 <= ((NOT IR2) AND (NOT IR1) AND (NOT IR0) AND (NOT Q1) AND Q0);
+	
+--MSC2 = (/IR2*/IR1*IR0*/Q1*Q0) + (/IR2*IR1*/IR0*/Q1*Q0) + (IR2*/IR1*/IR0*/Q1*Q0)
+	MSC2 <= ((NOT IR2) AND (NOT IR1) AND IR0 AND (NOT Q1) AND Q0)
+		OR ((NOT IR2) AND IR1 AND (NOT IR0) AND (NOT Q1) AND Q0)
+		OR (IR2 AND (NOT IR1) AND (NOT IR0) AND (NOT Q1) AND Q0);
+		
+--MSC1 = (/IR2*IR1*/IR0*/Q1*Q0) + (IR2*/IR1*/IR0*/Q1*Q0)
+	MSC1 <= ((NOT IR2) AND IR1 AND (NOT IR0) AND (NOT Q1) AND Q0)
+		OR (IR2 AND (NOT IR1) AND (NOT IR0) AND (NOT Q1) AND Q0);
+		
+--MSC0 = (/IR2*/IR1*IR0*/Q1*Q0) + (/IR2*IR1*/IR0*/Q1*Q0)
+	MSC0 <= ((NOT IR2) AND (NOT IR1) AND IR0 AND (NOT Q1) AND Q0)
+		OR ((NOT IR2) AND IR1 AND (NOT IR0) AND (NOT Q1) AND Q0);
+		
+--IRLD = (/Q1*/Q0)
+	IRLD <= ((NOT Q1) AND (NOT Q0));
+	
+--PCINC = (Q1+Q0) * (/Q1+/Q0)
+	PCINC <= (Q1 OR Q0)
+		AND ((NOT Q1) OR (NOT Q0));
+		
+--PCLD = (Q1*Q0)
+	PCLD <= (Q1 AND Q0);
+
+end logic;

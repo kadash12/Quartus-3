@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Johnny Li/Desktop/Quartus3/lab6/Lab6_Part2_ext_ROM/Board ROM/Board_ROM_restored/simulation/qsim
+Erom_test
+Z1 w1563752341
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx4 maxv 14 maxv_atom_pack 0 22 `BK`PRhBRzJ`D?VFe8HhF1
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx4 maxv 15 maxv_components 0 22 DkaDB?@L@IZ7N1;WjjI;M2
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z8 8Board_ROM.vho
+Z9 FBoard_ROM.vho
+l0
+L34
+VYf@i;;U0Whg1UoHd^XAZJ3
+!s100 Kmc9FU[P;nQ;1h]5Z5giV0
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1563752354
+!i10b 1
+Z12 !s108 1563752353.000000
+Z13 !s90 -work|work|Board_ROM.vho|
+Z14 !s107 Board_ROM.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 rom_test 0 22 Yf@i;;U0Whg1UoHd^XAZJ3
+l71
+L48
+VR4U`N__@Q<BmZ1K4cn@J:0
+!s100 D?e;HQd[AMd7DP3G^D7E02
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Erom_test_vhd_vec_tst
+Z17 w1563752337
+R6
+R7
+R0
+Z18 8Waveform.vwf.vht
+Z19 FWaveform.vwf.vht
+l0
+L31
+V^;HjIGicPn4EoS3@UW:]31
+!s100 8R3mRX0JF^JgdMgkTCHAK2
+R10
+32
+R11
+!i10b 1
+Z20 !s108 1563752354.000000
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Arom_test_arch
+R6
+R7
+DEx4 work 20 rom_test_vhd_vec_tst 0 22 ^;HjIGicPn4EoS3@UW:]31
+l52
+L33
+VX0znF`oV4=:D_PYAk>d:S2
+!s100 I3]Z;<J@z9Q9P`Un`bVBd1
+R10
+32
+R11
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R15
+R16

@@ -1,0 +1,28 @@
+|lab2quiz
+D <= 74153:inst.1Y
+I => inst2.IN0
+I => 74153:inst.1C0
+T => inst4.IN1
+T => inst10.IN1
+E => 74153:inst.1GN
+G_L => inst1.IN0
+Z => 74153:inst.A
+
+
+|lab2quiz|74153:inst
+1Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+1C0 => 1.IN3
+1C1 => 2.IN3
+1C2 => 3.IN3
+1C3 => 4.IN3
+2Y <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2C0 => 5.IN0
+2GN => 25.IN0
+2C1 => 6.IN0
+2C2 => 7.IN0
+2C3 => 8.IN0
+
+

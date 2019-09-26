@@ -1,0 +1,59 @@
+|lab2_MUX_TEST
+C <= 74153o:inst71.1Y
+A => 74153o:inst71.A
+A => 74153o:inst72.A
+A => 74153o:inst73.A
+A => 74153o:inst74.A
+B => 74153o:inst71.B
+B => 74153o:inst72.B
+B => 74153o:inst73.B
+B => 74153o:inst74.B
+D <= 74153o:inst72.1Y
+E <= 74153o:inst73.1Y
+F <= 74153o:inst74.1Y
+
+
+|lab2_MUX_TEST|74153o:inst71
+1Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+1C0 => 1.IN3
+1C1 => 2.IN3
+1C2 => 3.IN3
+1C3 => 4.IN3
+
+
+|lab2_MUX_TEST|74153o:inst72
+1Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+1C0 => 1.IN3
+1C1 => 2.IN3
+1C2 => 3.IN3
+1C3 => 4.IN3
+
+
+|lab2_MUX_TEST|74153o:inst73
+1Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+1C0 => 1.IN3
+1C1 => 2.IN3
+1C2 => 3.IN3
+1C3 => 4.IN3
+
+
+|lab2_MUX_TEST|74153o:inst74
+1Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+1C0 => 1.IN3
+1C1 => 2.IN3
+1C2 => 3.IN3
+1C3 => 4.IN3
+
+

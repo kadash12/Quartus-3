@@ -1,0 +1,123 @@
+|Lab3_3bit_Cnt
+Q1 <= 7474:inst85.1Q
+B => inst23.IN0
+B => inst14.IN0
+B => inst7.IN0
+B => inst111.IN0
+B => inst19.IN0
+B => inst45.IN1
+Q2 <= 7474:inst2.1Q
+CLK => 7474:inst2.1CLK
+CLK => 7474:inst85.1CLK
+CLK => 7474:inst85.2CLK
+F => inst77.IN0
+F => inst15.IN0
+F => inst25.IN0
+F => inst18.IN0
+F => inst45.IN2
+Q0 <= 7474:inst85.2Q
+Set2 => 7474:inst2.1PRN
+Reset2 => 7474:inst2.1CLRN
+Set0 => 7474:inst85.2PRN
+Set1 => 7474:inst85.1PRN
+Reset0 => 7474:inst85.2CLRN
+Reset1 => 7474:inst85.1CLRN
+Sp <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B7 <= lab2_decoder:inst410.B
+A7 <= lab2_decoder:inst410.A
+C7 <= lab2_decoder:inst410.C
+D7 <= lab2_decoder:inst410.D
+E7 <= lab2_decoder:inst410.E
+F7 <= lab2_decoder:inst410.F
+G7 <= lab2_decoder:inst410.G
+
+
+|Lab3_3bit_Cnt|7474:inst85
+1Q <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1CLRN => 9.ACLR
+1CLK => 9.CLK
+1D => 9.DATAIN
+1PRN => 9.PRESET
+1QN <= 16.DB_MAX_OUTPUT_PORT_TYPE
+2Q <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2CLRN => 10.ACLR
+2CLK => 10.CLK
+2D => 10.DATAIN
+2PRN => 10.PRESET
+2QN <= 15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_3bit_Cnt|7474:inst2
+1Q <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1CLRN => 9.ACLR
+1CLK => 9.CLK
+1D => 9.DATAIN
+1PRN => 9.PRESET
+1QN <= 16.DB_MAX_OUTPUT_PORT_TYPE
+2Q <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2CLRN => 10.ACLR
+2CLK => 10.CLK
+2D => 10.DATAIN
+2PRN => 10.PRESET
+2QN <= 15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab3_3bit_Cnt|lab2_decoder:inst410
+D <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+T_L => inst25.IN0
+X[0] => inst[0].IN0
+X[0] => inst3.IN3
+X[0] => inst5.IN3
+X[0] => inst10.IN3
+X[0] => rtwertwet.IN3
+X[0] => inst12.IN3
+X[0] => inst14.IN3
+X[0] => qwrwr8.IN3
+X[0] => wtrewtwert.IN3
+X[0] => inst35.IN0
+X[0] => inst39.IN2
+X[0] => inst40.IN2
+X[1] => inst[1].IN0
+X[1] => inst3.IN2
+X[1] => inst2.IN2
+X[1] => inst6.IN2
+X[1] => inst10.IN2
+X[1] => inst13.IN2
+X[1] => wrqwre.IN2
+X[1] => inst14.IN2
+X[1] => wtrewtwert.IN2
+X[1] => inst32.IN3
+X[1] => inst34.IN3
+X[1] => inst35.IN3
+X[1] => inst38.IN3
+X[2] => inst[2].IN0
+X[2] => inst6.IN1
+X[2] => inst5.IN1
+X[2] => inst11.IN1
+X[2] => inst13.IN1
+X[2] => inst12.IN1
+X[2] => inst14.IN1
+X[2] => inst4.IN1
+X[2] => wtrewtwert.IN1
+X[2] => inst31.IN1
+X[2] => inst34.IN1
+X[3] => inst[3].IN0
+X[3] => inst7.IN0
+X[3] => inst10.IN0
+X[3] => rtwertwet.IN0
+X[3] => inst11.IN0
+X[3] => inst13.IN0
+X[3] => inst12.IN0
+X[3] => wrqwre.IN0
+X[3] => inst14.IN0
+X[3] => inst34.IN2
+X[3] => inst35.IN2
+X[3] => inst38.IN2
+E <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+F <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+G <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+A <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+B <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+
+

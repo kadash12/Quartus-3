@@ -1,0 +1,16 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity DFF_Traf_Cont is port(
+	EV_L,CW: in std_logic;
+	Q3,Q2,Q1,Q0: in std_logic;
+	D3,D2,D1,D0: out std_logic;
+	G,Y,R: out std_logic
+);
+end DFF_Traf_Cont;
+
+architecture logic of DFF_Traf_Cont is 
+signal EV: std_logic;
+begin 
+	-- Define inputs
+	EV <= not EV_L;

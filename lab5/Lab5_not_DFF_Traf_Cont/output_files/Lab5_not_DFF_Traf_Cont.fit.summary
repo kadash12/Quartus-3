@@ -1,0 +1,18 @@
+Fitter Status : Successful - Sun Jul 14 16:38:20 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : Lab5_not_DFF_Traf_Cont
+Top-level Entity Name : Lab5_not_DFF_Traf_Cont
+Family : MAX 10
+Device : 10M02SCU169C8G
+Timing Models : Final
+Total logic elements : 18 / 2,304 ( < 1 % )
+    Total combinational functions : 18 / 2,304 ( < 1 % )
+    Dedicated logic registers : 4 / 2,304 ( < 1 % )
+Total registers : 4
+Total pins : 10 / 130 ( 8 % )
+Total virtual pins : 0
+Total memory bits : 0 / 110,592 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 32 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0

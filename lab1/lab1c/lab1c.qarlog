@@ -1,0 +1,16 @@
+Quartus Prime Archive log --	C:/Users/Johnny Li/Desktop/Quartus3/lab1/lab1c/lab1c.qarlog
+
+Archive:	C:/Users/Johnny Li/Desktop/Quartus3/lab1/lab1c/lab1c.qar
+Date:		Mon May 27 21:24:14 2019
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Johnny Li/Desktop/Quartus3/lab1/lab1c/Waveform.vwf
+C:/Users/Johnny Li/Desktop/Quartus3/lab1/lab1c/lab1c.bdf
+C:/Users/Johnny Li/Desktop/Quartus3/lab1/lab1c/lab1c.qpf
+C:/Users/Johnny Li/Desktop/Quartus3/lab1/lab1c/lab1c.qsf
+c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

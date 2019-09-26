@@ -1,0 +1,58 @@
+|Lab5_DFF_Traf_Cont
+D3 <= DFF_Traf_Cont:inst1.D3
+EV_L => DFF_Traf_Cont:inst1.EV_L
+CW => DFF_Traf_Cont:inst1.CW
+CLK => inst.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+CLK => inst4.CLK
+D2 <= DFF_Traf_Cont:inst1.D2
+D1 <= DFF_Traf_Cont:inst1.D1
+D0 <= DFF_Traf_Cont:inst1.D0
+Green <= DFF_Traf_Cont:inst1.G
+Yellow <= DFF_Traf_Cont:inst1.Y
+Red <= DFF_Traf_Cont:inst1.R
+
+
+|Lab5_DFF_Traf_Cont|DFF_Traf_Cont:inst1
+EV_L => D2.IN1
+EV_L => D1.IN1
+EV_L => D1.IN1
+EV_L => D0.IN1
+EV_L => R.IN1
+EV_L => D3.IN1
+EV_L => D2.IN1
+EV_L => D2.IN1
+EV_L => D2.IN1
+EV_L => D2.IN1
+CW => D2.IN1
+CW => G.IN1
+Q3 => D3.IN0
+Q3 => D3.IN0
+Q3 => D2.IN0
+Q2 => D3.IN1
+Q2 => D3.IN1
+Q2 => D2.IN1
+Q1 => D3.IN1
+Q1 => D2.IN1
+Q1 => D3.IN1
+Q1 => D2.IN1
+Q1 => D2.IN1
+Q0 => D3.IN1
+Q0 => D3.IN1
+Q0 => D2.IN1
+Q0 => D2.IN1
+Q0 => D2.IN1
+Q0 => D3.IN1
+Q0 => D2.IN1
+Q0 => D2.IN1
+Q0 => D2.IN1
+D3 <= D3.DB_MAX_OUTPUT_PORT_TYPE
+D2 <= D2.DB_MAX_OUTPUT_PORT_TYPE
+D1 <= D1.DB_MAX_OUTPUT_PORT_TYPE
+D0 <= D0.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+
+
